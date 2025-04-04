@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+section#conteudo {
+    width: 1000px; /* LARGURA*/
+    margin: auto; /* MARGENS AUTOMATICAS CONTEUDO FICA CENTRALIZADO NA TELA*/
+}
+
+iframe#frame-spec {
+    width: 380px;
+    height: 280px;
+    border: none; /*REMOVE A BORDA */
+    overflow: hidden; /* REMOVE A VISUALIZAÇÃO DO CONTEUDO*/  
+}
+ /* REMOVE A BARRA DE ROLAGEM */
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;
+}

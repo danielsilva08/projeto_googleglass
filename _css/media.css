@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+div#tv-radio {
+    width: 900px; /*Define a largura */
+    height: 580px; /*Define a altura*/
+    margin: auto; /*Centraliza o div horizontalmente na página.*/
+    background: url("../_imagens/radio-tv.png"); /*Define a imagem de fundo do div para o arquivo de imagem "radio-tv.png" localizado na pasta "_imagens" em relação ao arquivo CSS atual.*/
+}
+
+audio#musica {
+    display: block; /*Torna o elemento de áudio com o ID "musica" um elemento de nível de bloco, permitindo que ele ocupe toda a largura do seu contêiner.*/
+    position: relative; /*Posiciona o elemento de áudio em relação à sua posição normal.*/
+    left: 580px; /*Posiciona o elemento de áudio 580 pixels para a direita */
+    top: 490px; /*para baixo de sua posição normal.*/
+    width: 300px; /*define a largura do elemento de áudio para 300 pixels.*/
+}
+video#filme {
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 70px;
+    width: 440px;
+}
+

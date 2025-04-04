@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*Define o tamanho e a posição do formulário na página.*/
+form {
+    width: 500px;
+    margin: auto;
+}
+/*COLOCA TAMANHA E CORES NOS CAMPO DE DIGITAR*/
+input, textarea {
+    font-family: sans-serif; /*Define a fonte, o peso da fonte e o tamanho da fonte para os campos de entrada e áreas de texto.*/
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8); /* COLOCA TRANSPARÊNCIA NO CAMPO NA ONDE DIGITA O E-MAIL E USUARIO PARA A IMAGEN FICAR POR TRANS DO CAMPO SEM CORTALA*/
+}
+/* Estilos para quando o mouse passa por cima */
+input:hover, textarea:hover {
+    background-color: #dddddd; /*Define a cor de fundo dos campos, com um pouco de transparência para permitir que a imagem de fundo seja visível.*/
+}
+/* Estilos para legendas legend: Define a aparência das legendas, que geralmente descrevem um grupo de campos relacionados.*/
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+/* Estilos para conjuntos de campos Define a aparência dos conjuntos de campos, que agrupam elementos relacionados dentro de uma caixa.*/
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sexo {
+    width: 150px;
+}
+/*COLOCA IMAGENS DENTRO DOS CAMPOS*/
+fieldset#usuario {
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%; /* propriedades no-repeat e as posições em porcentagem controlam como a imagem é repetida e onde ela é posicionada dentro do elemento. */
+}
+fieldset#endereco {
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+fieldset#mensagem {
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+fieldset#pedido {
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}

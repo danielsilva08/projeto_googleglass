@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*Define um elemento de lista não ordenada (ul) com o ID "album-fotos". Esse será o contêiner principal da sua galeria de fotos.*/
+ul#album-fotos {
+    width: 700px; /*largura máxima do contêiner em 700 pixels.*/
+    margin: 0 auto; /*Centraliza o contêiner horizontalmente na página, com margens superior e inferior de 0.*/
+    padding: 50px; /*Adiciona um espaçamento interno de 50 pixels em todos os lados do contêiner.*/
+    overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse as bordas do contêiner (útil para garantir que as imagens não saiam da área definida).*/
+    list-style: none; /* Remove os marcadores padrão de listas não ordenadas.*/
+}
+/*Estilização dos Itens da Lista (Fotos)*/
+ul#album-fotos li {
+    float: left; /*Faz com que cada item da lista (li) flutue para a esquerda, um ao lado do outro.*/
+    width: 200px; /*Definem a largura*/
+    height: 200px; /*altura */
+    margin: 10px; /*Adiciona uma margem de 10 pixels em todos os lados de cada imagem, criando espaço entre elas.*/
+    border: 5px solid #ffffff; /*Aplica uma borda sólida branca de 5 pixels em torno de cada imagem.*/
+    background-color: #ffffff; /*Define a cor de fundo das imagens como branco*/
+    box-shadow: 1px 3px 1px rgba(rgba(0,0,0,.3));/*Adiciona uma sombra leve à cada imagem para criar um efeito de profundidade em volta das imagens.*/
+    -webkit-transition: all 0.4 ease-in; /*a imagem demora 4 segundos para dar o zoom ao passar o mouse por cima*/
+}
+
+/*FAZ COM QUE TODAS AS LEGENDAS DA FOTOS SUMAM E SÓ APAREÇAM AO COLOCAR O MOUSE PORCIMA (SPAN) Seleciona todos os elementos span dentro dos itens da lista. Presumivelmente, esses spans contêm as legendas das imagens.*/
+ul#album-fotos li span{
+    opacity: 0; /*Define a opacidade dos spans como 0, tornando-os invisíveis.*/
+    color: #ffffff; /*cor da escrita*/
+    text-shadow: 1px 1px 1px #000000;/*Essa propriedade adiciona uma sombra ao texto. Esses valores definem o deslocamento horizontal, vertical e o borrado da sombra, respectivamente. No seu caso, a sombra terá 1 pixel para a direita, 1 pixel para baixo e um borrado de 1 pixel.Essa linha fará com que o texto tenha uma leve sombra preta, dando um efeito de profundidade.*/
+    background-color: rgba(0,0,0,.3);/*Define a cor de fundo do elemento.*/
+    font-size: 9pt; /*Define o tamanho da fonte do texto.*/
+    line-height: 370px; /*Define a altura de cada linha de texto. colocando do lado de baixo do bloco*/
+    padding: 5px; /*espaço interno entre o conteúdo e a borda do elemento.*/
+}
+
+ul#album-fotos li:hover {
+    -webkit-transform: scale(1.5); /* Essa propriedade permite aplicar transformações 2D ou 3D em um elemento. Essa função específica dentro de transform escala o elemento. O valor 1.5 significa que o elemento será aumentado em 150% do seu tamanho original (1.5 vezes). No caso a imagem*/
+}
+ul#album-fotos li:hover span {
+    opacity: 1; /*Com essa adição, quando o mouse passar sobre uma imagem, a legenda correspondente (dentro do span) se tornará visível.*/
+
+  }
+
+ul#album-fotos li#foto01 {
+    background: url("../_imagens/galeria-01.jpg") no-repeat;
+    background-position: 50% 50%; /*imagen fica no centro*/
+    background-size: 400px 400px; /*tamanho original das imagens*/
+    background-color: #ffffff;
+}
+/*Efeito de zoom*/
+ul#album-fotos li#foto01:hover {
+    background-position: 0px 0px; /* volta a mostra a parte de cima da tela na imagem*/
+    background-size: 200px 200px; /* retorna a imagem*/
+}
+
+
+ul#album-fotos li#foto02 {
+    background: url("../_imagens/galeria-02.jpg") no-repeat;
+    background-position: 50% 50%; /*imagen fica no centro*/
+    background-size: 400px 400px; /*tamanho original das imagens*/
+    background-color: #ffffff;
+}
+/*Efeito de zoom*/
+ul#album-fotos li#foto02:hover {
+    background-position: 0px 0px; /* volta a mostra a parte de cima da tela na imagem*/
+    background-size: 200px 200px; /* retorna a imagem*/
+}
+
+ul#album-fotos li#foto03 {
+    background: url("../_imagens/galeria-03.jpg") no-repeat;
+    background-position: 50% 50%; /*imagen fica no centro*/
+    background-size: 400px 400px; /*tamanho original das imagens*/
+    background-color: #ffffff;
+}
+
+/*Efeito de zoom*/
+ul#album-fotos li#foto03:hover {
+    background-position: 0px 0px; /* volta a mostra a parte de cima da tela na imagem*/
+    background-size: 200px 200px; /* retorna a imagem*/
+}
+ul#album-fotos li#foto04 {
+    background: url("../_imagens/galeria-04.jpg") no-repeat;
+    background-position: 50% 50%; /*imagen fica no centro*/
+    background-size: 400px 400px; /*tamanho original das imagens*/
+    background-color: #ffffff;
+}
+
+/*Efeito de zoom*/
+ul#album-fotos li#foto04:hover {
+    background-position: 0px 0px; /* volta a mostra a parte de cima da tela na imagem*/
+    background-size: 200px 200px; /* retorna a imagem*/
+}
+ul#album-fotos li#foto05 {
+    background: url("../_imagens/galeria-05.jpg") no-repeat;
+    background-position: 50% 50%; /*imagen fica no centro*/
+    background-size: 400px 400px; /*tamanho original das imagens*/
+    background-color: #ffffff;
+}
+
+/*Efeito de zoom*/
+ul#album-fotos li#foto05:hover {
+    background-position: 0px 0px; /* volta a mostra a parte de cima da tela na imagem*/
+    background-size: 200px 200px; /* retorna a imagem*/
+}
+
+ul#album-fotos li#foto06 {
+    background: url("../_imagens/galeria-06.jpg") no-repeat;
+    background-position: 50% 50%; /*imagen fica no centro*/
+    background-size: 400px 400px; /*tamanho original das imagens*/
+    background-color: #ffffff;
+}
+/*Efeito de zoom*/
+ul#album-fotos li#foto06:hover {
+    background-position: 0px 0px; /* volta a mostra a parte de cima da tela na imagem*/
+    background-size: 200px 200px; /* retorna a imagem*/
+}
